@@ -17,7 +17,11 @@
 - (void) awakeFromNib {
 
     // Set an initial URL on the web view so we'll have something to display.
-    [myWebView setMainFrameURL: @"http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=weather+station+KBFI"];
+    // google maps free to use on free web sites.
+    // [myWebView setMainFrameURL: @"http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=weather+station+KBFI"];
+    
+    // open street map
+    [myWebView setMainFrameURL: @"http://www.openstreetmap.org/?lat=47.530000&lon=-122.301972&zoom=12"];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
